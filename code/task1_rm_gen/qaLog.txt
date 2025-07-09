@@ -1,0 +1,12 @@
+09 Jul 2025 12:27:18,236  INFO LmApi - LmApi Version = SftShrDevJava20.01-s002
+09 Jul 2025 12:27:18,237  INFO LmApi - FlexNet Java Tool-Kit Version = 11.16
+09 Jul 2025 12:27:18,237  INFO LmApi - CDS_LIC_FILE: 5280@10.19.32.90
+09 Jul 2025 12:27:18,237  INFO LmApi - LM_LICENSE_FILE: 5280@10.19.32.90
+09 Jul 2025 12:27:18,237  INFO LmApi - License Server Path: 5280@10.19.32.90
+09 Jul 2025 12:27:18,237  INFO LmApi - Begin parsing license server path configuration
+09 Jul 2025 12:27:18,237  INFO LmApi - Successfully parsed license server path configuration. License server path = 5280@10.19.32.90
+09 Jul 2025 12:27:18,247  INFO LmApi - FeatureExists started ....
+09 Jul 2025 12:27:18,247  INFO LmApi - Checking for feature Xcelium_Single_Core 1.000
+09 Jul 2025 12:27:18,335  INFO LmApi - FeatureExists of Xcelium_Single_Core completed (time 88).
+09 Jul 2025 12:27:18,403  INFO LmApi - CheckInAll started ....
+09 Jul 2025 12:27:18,403  INFO LmApi - CheckInAll completed (time 0).
