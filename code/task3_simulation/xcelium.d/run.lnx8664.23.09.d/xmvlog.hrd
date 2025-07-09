@@ -1,0 +1,24 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-INCDIR
+.
+-INCDIR
+./YAPP/sv
+-INCDIR
+./channel/sv
+-INCDIR
+./clock_and_reset/sv
+-INCDIR
+./hbus/sv
+-INCDIR
+./module_uvc/sv
+-INCDIR
+./module_uvc/tb
+-I_INCDIR
+/home/cc/mnt/XCELIUM2309/tools/methodology/UVM/CDNS-1.1d/sv/src
+-DEFINE
+USE_PARAMETERIZED_WRAPPER
+-I_INCDIR
+/home/cc/mnt/XCELIUM2309/tools/methodology/UVM/CDNS-1.1d/additions/sv

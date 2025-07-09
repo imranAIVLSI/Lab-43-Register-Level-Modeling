@@ -1,0 +1,1247 @@
+xrun(64): 23.09-s006: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	23.09-s006: Started on Jul 09, 2025 at 19:29:49 PKT
+xrun
+	-f file3.f
+		-64
+		-uvmhome /home/cc/mnt/XCELIUM2309/tools/methodology/UVM/CDNS-1.1d
+		-timescale 1ns/1ns
+		-incdir .
+		-incdir ./YAPP/sv
+		-incdir ./channel/sv
+		-incdir ./clock_and_reset/sv
+		-incdir ./hbus/sv
+		-incdir ./module_uvc/sv
+		-incdir ./module_uvc/tb
+		./YAPP/sv/yapp_pkg.sv
+		./channel/sv/channel_pkg.sv
+		./clock_and_reset/sv/clock_and_reset_pkg.sv
+		./hbus/sv/hbus_pkg.sv
+		./channel/sv/channel_if.sv
+		./YAPP/sv/yapp_if.sv
+		./clock_and_reset/sv/clock_and_reset_if.sv
+		./hbus/sv/hbus_if.sv
+		./module_uvc/tb/clkgen.sv
+		./router_rtl/yapp_router.sv
+		./module_uvc/tb/hw_top_no_dut.sv
+		./module_uvc/sv/router_module.sv
+		./module_uvc/tb/cdns_uvmreg_utils_pkg.sv
+		./module_uvc/tb/yapp_router_regs_rdb.sv
+		./module_uvc/tb/tb_top.sv
+		+UVM_TESTNAME=reg_access_test
+		+UVM_VERBOSITY=UVM_HIGH
+		+SVSEED=random
+	-access rwc
+
+   User defined plus("+") options:
+	+UVM_VERBOSITY=UVM_HIGH
+
+DEFINE std       ./STD
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+DEFINE std       ./STD
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+DEFINE std       ./STD
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+DEFINE std       ./STD
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+Recompiling... reason: file './module_uvc/tb/router_test_lib.sv' is newer than expected.
+	expected: Wed Jul  9 19:13:52 2025
+	actual:   Wed Jul  9 19:29:45 2025
+DEFINE std       ./STD
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /home/cc/mnt/XCELIUM2309/tools/methodology/UVM/CDNS-1.1d
+DEFINE std       ./STD
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+DEFINE std       ./STD
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xmvlog: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+file: ./YAPP/sv/yapp_pkg.sv
+	package worklib.yapp_pkg:sv
+		errors: 0, warnings: 0
+file: ./channel/sv/channel_pkg.sv
+	package worklib.channel_pkg:sv
+		errors: 0, warnings: 0
+file: ./clock_and_reset/sv/clock_and_reset_pkg.sv
+package clock_and_reset_pkg;
+                          |
+xmvlog: *W,TSNSPK (./clock_and_reset/sv/clock_and_reset_pkg.sv,3|26): `timescale is not specified for the package.  The default timescale of 1ns/1ns will be assumed for this package.
+	package worklib.clock_and_reset_pkg:sv
+		errors: 0, warnings: 1
+file: ./hbus/sv/hbus_pkg.sv
+	package worklib.hbus_pkg:sv
+		errors: 0, warnings: 0
+file: ./YAPP/sv/yapp_if.sv
+	interface worklib.yapp_if:sv
+		errors: 0, warnings: 0
+file: ./hbus/sv/hbus_if.sv
+	interface worklib.hbus_if:sv
+		errors: 0, warnings: 0
+file: ./module_uvc/sv/router_module.sv
+	package worklib.router_module:sv
+		errors: 0, warnings: 0
+file: ./module_uvc/tb/cdns_uvmreg_utils_pkg.sv
+	package worklib.cdns_uvmreg_utils_pkg:sv
+		errors: 0, warnings: 0
+file: ./module_uvc/tb/yapp_router_regs_rdb.sv
+	package worklib.yapp_router_reg_pkg:sv
+		errors: 0, warnings: 0
+file: ./module_uvc/tb/tb_top.sv
+	module worklib.tb_top:sv
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 15
+DEFINE std       ./STD
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+DEFINE std       ./STD
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xrun: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+DEFINE std       ./STD
+|
+xmelab: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xmelab: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xmelab: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xmelab: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xmelab: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xmelab: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xmelab: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xmelab: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xmelab: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xmelab: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xmelab: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xmelab: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xmelab: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xmelab: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xmelab: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		$unit_0x3f2b4279
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		hbus_pkg
+		yapp_pkg
+		channel_pkg
+		clock_and_reset_pkg
+		router_module
+		cdns_uvmreg_utils_pkg
+		yapp_router_reg_pkg
+		hw_top
+		tb_top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+DEFINE std       ./STD
+|
+xmvlog_cg: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xmvlog_cg: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xmvlog_cg: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xmvlog_cg: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xmvlog_cg: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xmvlog_cg: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xmvlog_cg: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xmvlog_cg: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xmvlog_cg: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xmvlog_cg: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xmvlog_cg: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xmvlog_cg: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xmvlog_cg: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xmvlog_cg: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xmvlog_cg: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+		worklib.tb_top:sv <0x445831b1>
+			streams: 318, words: 300906
+		worklib.router_module:sv <0x308e1ed4>
+			streams: 220, words: 211961
+		worklib.channel_pkg:sv <0x18f0e3e1>
+			streams: 602, words: 781420
+		worklib.clock_and_reset_pkg:sv <0x01f97b4e>
+			streams: 525, words: 627688
+		worklib.yapp_router_reg_pkg:sv <0x75a611ce>
+			streams: 351, words: 292371
+		worklib.cdns_uvmreg_utils_pkg:sv <0x60a4e467>
+			streams:  60, words: 127851
+		worklib.hw_top:sv <0x17c71acb>
+			streams:  24, words:  6165
+		worklib.hbus_if:sv <0x0fba8488>
+			streams: 842, words: 1033833
+		worklib.yapp_if:sv <0x52919e24>
+			streams: 758, words: 895584
+		worklib.cdns_uvm_pkg:sv <0x61bb5a1f>
+			streams: 172, words: 275996
+		worklib.cdns_uvmapi:svp <0x2f7f5976>
+			streams:  27, words: 30300
+		worklib.cdns_assert2uvm_pkg:sv <0x470b9f3d>
+			streams:   3, words:  1763
+		worklib.uvm_pkg:sv <0x56b82c0f>
+			streams: 4560, words: 7132727
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                       9       7
+		Interfaces:                    6       4
+		Verilog packages:             11      11
+		Resolved nets:                 0       1
+		Registers:                 20295   12290
+		Scalar wires:                 63       -
+		Vectored wires:               34       -
+		Named events:                  5      13
+		Always blocks:                20      16
+		Initial blocks:              553     245
+		Parallel blocks:              40      41
+		Cont. assignments:            20      42
+		Pseudo assignments:           27       -
+		Assertions:                    3       3
+		Covergroup Instances:          0      20
+		Compilation units:             1       1
+		SV Class declarations:       288     400
+		SV Class specializations:    640     640
+		Process Clocks:               14       4
+		Simulation timescale:      100ps
+	Writing initial simulation snapshot: worklib.hw_top:sv
+DEFINE std       ./STD
+|
+xmsim: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xmsim: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xmsim: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xmsim: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xmsim: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xmsim: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xmsim: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xmsim: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xmsim: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xmsim: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xmsim: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xmsim: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xmsim: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xmsim: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xmsim: *W,DLCPTH (/home/cc/mnt/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/home/cc/mnt/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+Loading snapshot worklib.hw_top:sv .................... Done
+SVSEED set randomly from command line: 1052688823
+xcelium> source /home/cc/mnt/XCELIUM2309/tools/xcelium/files/xmsimrc
+xcelium> source /home/cc/mnt/XCELIUM2309/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (23.09-s006)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test reg_access_test...
+UVM_INFO ./module_uvc/tb/router_test_lib.sv(16) @ 0: uvm_test_top [BUILD_PHASE] Build Phase of Testbench is being executed
+UVM_INFO ./module_uvc/tb/router_tb.sv(58) @ 0: uvm_test_top.tb [BUILD_PHASE] Build phase of the testbench is being executed
+UVM_INFO ./channel/sv/channel_rx_monitor.sv(68) @ 0: uvm_test_top.tb.chan0.rx_agent.monitor [NOCOV] Coverage not enabled for: uvm_test_top.tb.chan0.rx_agent.monitor
+UVM_INFO ./channel/sv/channel_rx_monitor.sv(68) @ 0: uvm_test_top.tb.chan1.rx_agent.monitor [NOCOV] Coverage not enabled for: uvm_test_top.tb.chan1.rx_agent.monitor
+UVM_INFO ./channel/sv/channel_rx_monitor.sv(68) @ 0: uvm_test_top.tb.chan2.rx_agent.monitor [NOCOV] Coverage not enabled for: uvm_test_top.tb.chan2.rx_agent.monitor
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Name                                     Type                                                                               Size  Value                               
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+uvm_test_top                             reg_access_test                                                                    -     @3199                               
+  tb                                     router_tb                                                                          -     @3292                               
+    YAPP                                 yapp_env                                                                           -     @3370                               
+      agent                              yapp_tx_agent                                                                      -     @4500                               
+        driver                           yapp_tx_driver                                                                     -     @5273                               
+          rsp_port                       uvm_analysis_port                                                                  -     @5424                               
+            recording_detail             integral                                                                           32    'd1                                 
+          seq_item_port                  uvm_seq_item_pull_port                                                             -     @5375                               
+            recording_detail             integral                                                                           32    'd1                                 
+          recording_detail               integral                                                                           32    'd1                                 
+        monitor                          yapp_tx_monitor                                                                    -     @3329                               
+          yapp_out                       uvm_analysis_port                                                                  -     @4657                               
+            recording_detail             integral                                                                           32    'd1                                 
+          recording_detail               integral                                                                           32    'd1                                 
+        sequencer                        yapp_tx_sequencer                                                                  -     @4637                               
+          rsp_export                     uvm_analysis_export                                                                -     @4746                               
+            recording_detail             integral                                                                           32    'd1                                 
+          seq_item_export                uvm_seq_item_pull_imp                                                              -     @5294                               
+            recording_detail             integral                                                                           32    'd1                                 
+          recording_detail               integral                                                                           32    'd1                                 
+          arbitration_queue              array                                                                              0     -                                   
+          lock_queue                     array                                                                              0     -                                   
+          num_last_reqs                  integral                                                                           32    'd1                                 
+          num_last_rsps                  integral                                                                           32    'd1                                 
+        is_active                        uvm_active_passive_enum                                                            1     UVM_ACTIVE                          
+        recording_detail                 integral                                                                           32    'd1                                 
+      recording_detail                   integral                                                                           32    'd1                                 
+    chan0                                channel_env                                                                        -     @3325                               
+      rx_agent                           channel_rx_agent                                                                   -     @5488                               
+        driver                           channel_rx_driver                                                                  -     @6195                               
+          rsp_port                       uvm_analysis_port                                                                  -     @6346                               
+            recording_detail             integral                                                                           32    'd1                                 
+          seq_item_port                  uvm_seq_item_pull_port                                                             -     @6297                               
+            recording_detail             integral                                                                           32    'd1                                 
+          channel_id                     integral                                                                           32    'h0                                 
+          recording_detail               integral                                                                           32    'd1                                 
+        monitor                          channel_rx_monitor                                                                 -     @5521                               
+          item_collected_port            uvm_analysis_port                                                                  -     @5577                               
+            recording_detail             integral                                                                           32    'd1                                 
+          channel_id                     integral                                                                           32    'h0                                 
+          checks_enable                  integral                                                                           1     'h1                                 
+          coverage_enable                integral                                                                           1     'h1                                 
+          recording_detail               integral                                                                           32    'd1                                 
+        sequencer                        channel_rx_sequencer                                                               -     @5551                               
+          rsp_export                     uvm_analysis_export                                                                -     @5666                               
+            recording_detail             integral                                                                           32    'd1                                 
+          seq_item_export                uvm_seq_item_pull_imp                                                              -     @6216                               
+            recording_detail             integral                                                                           32    'd1                                 
+          recording_detail               integral                                                                           32    'd1                                 
+          arbitration_queue              array                                                                              0     -                                   
+          lock_queue                     array                                                                              0     -                                   
+          num_last_reqs                  integral                                                                           32    'd1                                 
+          num_last_rsps                  integral                                                                           32    'd1                                 
+        is_active                        uvm_active_passive_enum                                                            1     UVM_ACTIVE                          
+        recording_detail                 integral                                                                           32    'd1                                 
+      channel_id                         integral                                                                           32    'h0                                 
+      checks_enable                      integral                                                                           1     'h1                                 
+      coverage_enable                    integral                                                                           1     'h1                                 
+      recording_detail                   integral                                                                           32    'd1                                 
+    chan1                                channel_env                                                                        -     @3399                               
+      rx_agent                           channel_rx_agent                                                                   -     @6400                               
+        driver                           channel_rx_driver                                                                  -     @7089                               
+          rsp_port                       uvm_analysis_port                                                                  -     @7234                               
+            recording_detail             integral                                                                           32    'd1                                 
+          seq_item_port                  uvm_seq_item_pull_port                                                             -     @7186                               
+            recording_detail             integral                                                                           32    'd1                                 
+          channel_id                     integral                                                                           32    'h1                                 
+          recording_detail               integral                                                                           32    'd1                                 
+        monitor                          channel_rx_monitor                                                                 -     @6397                               
+          item_collected_port            uvm_analysis_port                                                                  -     @6484                               
+            recording_detail             integral                                                                           32    'd1                                 
+          channel_id                     integral                                                                           32    'h1                                 
+          checks_enable                  integral                                                                           1     'h1                                 
+          coverage_enable                integral                                                                           1     'h1                                 
+          recording_detail               integral                                                                           32    'd1                                 
+        sequencer                        channel_rx_sequencer                                                               -     @6464                               
+          rsp_export                     uvm_analysis_export                                                                -     @6569                               
+            recording_detail             integral                                                                           32    'd1                                 
+          seq_item_export                uvm_seq_item_pull_imp                                                              -     @7109                               
+            recording_detail             integral                                                                           32    'd1                                 
+          recording_detail               integral                                                                           32    'd1                                 
+          arbitration_queue              array                                                                              0     -                                   
+          lock_queue                     array                                                                              0     -                                   
+          num_last_reqs                  integral                                                                           32    'd1                                 
+          num_last_rsps                  integral                                                                           32    'd1                                 
+        is_active                        uvm_active_passive_enum                                                            1     UVM_ACTIVE                          
+        recording_detail                 integral                                                                           32    'd1                                 
+      channel_id                         integral                                                                           32    'h1                                 
+      checks_enable                      integral                                                                           1     'h1                                 
+      coverage_enable                    integral                                                                           1     'h1                                 
+      recording_detail                   integral                                                                           32    'd1                                 
+    chan2                                channel_env                                                                        -     @3429                               
+      rx_agent                           channel_rx_agent                                                                   -     @7286                               
+        driver                           channel_rx_driver                                                                  -     @7975                               
+          rsp_port                       uvm_analysis_port                                                                  -     @8120                               
+            recording_detail             integral                                                                           32    'd1                                 
+          seq_item_port                  uvm_seq_item_pull_port                                                             -     @8072                               
+            recording_detail             integral                                                                           32    'd1                                 
+          channel_id                     integral                                                                           32    'h2                                 
+          recording_detail               integral                                                                           32    'd1                                 
+        monitor                          channel_rx_monitor                                                                 -     @7283                               
+          item_collected_port            uvm_analysis_port                                                                  -     @7370                               
+            recording_detail             integral                                                                           32    'd1                                 
+          channel_id                     integral                                                                           32    'h2                                 
+          checks_enable                  integral                                                                           1     'h1                                 
+          coverage_enable                integral                                                                           1     'h1                                 
+          recording_detail               integral                                                                           32    'd1                                 
+        sequencer                        channel_rx_sequencer                                                               -     @7350                               
+          rsp_export                     uvm_analysis_export                                                                -     @7455                               
+            recording_detail             integral                                                                           32    'd1                                 
+          seq_item_export                uvm_seq_item_pull_imp                                                              -     @7995                               
+            recording_detail             integral                                                                           32    'd1                                 
+          recording_detail               integral                                                                           32    'd1                                 
+          arbitration_queue              array                                                                              0     -                                   
+          lock_queue                     array                                                                              0     -                                   
+          num_last_reqs                  integral                                                                           32    'd1                                 
+          num_last_rsps                  integral                                                                           32    'd1                                 
+        is_active                        uvm_active_passive_enum                                                            1     UVM_ACTIVE                          
+        recording_detail                 integral                                                                           32    'd1                                 
+      channel_id                         integral                                                                           32    'h2                                 
+      checks_enable                      integral                                                                           1     'h1                                 
+      coverage_enable                    integral                                                                           1     'h1                                 
+      recording_detail                   integral                                                                           32    'd1                                 
+    clk_rst                              clock_and_reset_env                                                                -     @3489                               
+      agent                              clock_and_reset_agent                                                              -     @8171                               
+        driver                           clock_and_reset_driver                                                             -     @8202                               
+          rsp_port                       uvm_analysis_port                                                                  -     @8303                               
+            recording_detail             integral                                                                           32    'd1                                 
+          seq_item_port                  uvm_seq_item_pull_port                                                             -     @8252                               
+            recording_detail             integral                                                                           32    'd1                                 
+          recording_detail               integral                                                                           32    'd1                                 
+        sequencer                        clock_and_reset_sequencer                                                          -     @8282                               
+          rsp_export                     uvm_analysis_export                                                                -     @8392                               
+            recording_detail             integral                                                                           32    'd1                                 
+          seq_item_export                uvm_seq_item_pull_imp                                                              -     @8940                               
+            recording_detail             integral                                                                           32    'd1                                 
+          recording_detail               integral                                                                           32    'd1                                 
+          arbitration_queue              array                                                                              0     -                                   
+          lock_queue                     array                                                                              0     -                                   
+          num_last_reqs                  integral                                                                           32    'd1                                 
+          num_last_rsps                  integral                                                                           32    'd1                                 
+        recording_detail                 integral                                                                           32    'd1                                 
+      recording_detail                   integral                                                                           32    'd1                                 
+    hbus                                 hbus_env                                                                           -     @3459                               
+      masters[0]                         hbus_master_agent                                                                  -     @9071                               
+        driver                           hbus_master_driver                                                                 -     @9690                               
+          rsp_port                       uvm_analysis_port                                                                  -     @9841                               
+            recording_detail             integral                                                                           32    'd1                                 
+          seq_item_port                  uvm_seq_item_pull_port                                                             -     @9792                               
+            recording_detail             integral                                                                           32    'd1                                 
+          random_delay                   integral                                                                           1     'h0                                 
+          master_id                      integral                                                                           32    'h0                                 
+          recording_detail               integral                                                                           32    'd1                                 
+        sequencer                        hbus_master_sequencer                                                              -     @9103                               
+          rsp_export                     uvm_analysis_export                                                                -     @9163                               
+            recording_detail             integral                                                                           32    'd1                                 
+          seq_item_export                uvm_seq_item_pull_imp                                                              -     @9711                               
+            recording_detail             integral                                                                           32    'd1                                 
+          recording_detail               integral                                                                           32    'd1                                 
+          arbitration_queue              array                                                                              0     -                                   
+          lock_queue                     array                                                                              0     -                                   
+          num_last_reqs                  integral                                                                           32    'd1                                 
+          num_last_rsps                  integral                                                                           32    'd1                                 
+        monitor                          hbus_monitor                                                                       -     @8987                               
+        is_active                        uvm_active_passive_enum                                                            1     UVM_ACTIVE                          
+        master_id                        integral                                                                           32    'h0                                 
+        recording_detail                 integral                                                                           32    'd1                                 
+      monitor                            hbus_monitor                                                                       -     @8987                               
+        item_collected_port              uvm_analysis_port                                                                  -     @9037                               
+          recording_detail               integral                                                                           32    'd1                                 
+        checks_enable                    integral                                                                           1     'h1                                 
+        coverage_enable                  integral                                                                           1     'h1                                 
+        recording_detail                 integral                                                                           32    'd1                                 
+      num_masters                        integral                                                                           32    'h1                                 
+      num_slaves                         integral                                                                           32    'h0                                 
+      checks_enable                      integral                                                                           1     'h1                                 
+      coverage_enable                    integral                                                                           1     'h1                                 
+      recording_detail                   integral                                                                           32    'd1                                 
+    mcsequencer                          router_mcsequencer                                                                 -     @3521                               
+      rsp_export                         uvm_analysis_export                                                                -     @3610                               
+        recording_detail                 integral                                                                           32    'd1                                 
+      seq_item_export                    uvm_seq_item_pull_imp                                                              -     @4160                               
+        recording_detail                 integral                                                                           32    'd1                                 
+      recording_detail                   integral                                                                           32    'd1                                 
+      arbitration_queue                  array                                                                              0     -                                   
+      lock_queue                         array                                                                              0     -                                   
+      num_last_reqs                      integral                                                                           32    'd1                                 
+      num_last_rsps                      integral                                                                           32    'd1                                 
+    rt_env                               router_module_env                                                                  -     @4139                               
+      chan0_pkt_in                       uvm_analysis_export                                                                -     @11788                              
+        recording_detail                 integral                                                                           32    'd1                                 
+      chan1_pkt_in                       uvm_analysis_export                                                                -     @11837                              
+        recording_detail                 integral                                                                           32    'd1                                 
+      chan2_pkt_in                       uvm_analysis_export                                                                -     @11886                              
+        recording_detail                 integral                                                                           32    'd1                                 
+      hbus_pkt_in                        uvm_analysis_export                                                                -     @11935                              
+        recording_detail                 integral                                                                           32    'd1                                 
+      rt_reference                       router_reference                                                                   -     @11544                              
+        hbuss_in                         uvm_analysis_imp_hbus                                                              -     @11691                              
+          recording_detail               integral                                                                           32    'd1                                 
+        yapp_in                          uvm_analysis_imp_yapp                                                              -     @11642                              
+          recording_detail               integral                                                                           32    'd1                                 
+        yapp_out                         uvm_analysis_port                                                                  -     @11593                              
+          recording_detail               integral                                                                           32    'd1                                 
+        recording_detail                 integral                                                                           32    'd1                                 
+      rt_scb                             router_scoreboard                                                                  -     @9907                               
+        chan0_fifo                       uvm_tlm_analysis_fifo #(T)                                                         -     @10158                              
+          analysis_export                uvm_analysis_imp                                                                   -     @10455                              
+            recording_detail             integral                                                                           32    'd1                                 
+          get_ap                         uvm_analysis_port                                                                  -     @10405                              
+            recording_detail             integral                                                                           32    'd1                                 
+          get_peek_export                uvm_get_peek_imp                                                                   -     @10307                              
+            recording_detail             integral                                                                           32    'd1                                 
+          put_ap                         uvm_analysis_port                                                                  -     @10356                              
+            recording_detail             integral                                                                           32    'd1                                 
+          put_export                     uvm_put_imp                                                                        -     @10258                              
+            recording_detail             integral                                                                           32    'd1                                 
+          recording_detail               integral                                                                           32    'd1                                 
+        chan0_get                        uvm_get_port                                                                       -     @11367                              
+          recording_detail               integral                                                                           32    'd1                                 
+        chan1_fifo                       uvm_tlm_analysis_fifo #(T)                                                         -     @10434                              
+          analysis_export                uvm_analysis_imp                                                                   -     @10726                              
+            recording_detail             integral                                                                           32    'd1                                 
+          get_ap                         uvm_analysis_port                                                                  -     @10677                              
+            recording_detail             integral                                                                           32    'd1                                 
+          get_peek_export                uvm_get_peek_imp                                                                   -     @10581                              
+            recording_detail             integral                                                                           32    'd1                                 
+          put_ap                         uvm_analysis_port                                                                  -     @10629                              
+            recording_detail             integral                                                                           32    'd1                                 
+          put_export                     uvm_put_imp                                                                        -     @10533                              
+            recording_detail             integral                                                                           32    'd1                                 
+          recording_detail               integral                                                                           32    'd1                                 
+        chan1_get                        uvm_get_port                                                                       -     @11416                              
+          recording_detail               integral                                                                           32    'd1                                 
+        chan2_fifo                       uvm_tlm_analysis_fifo #(T)                                                         -     @10706                              
+          analysis_export                uvm_analysis_imp                                                                   -     @10997                              
+            recording_detail             integral                                                                           32    'd1                                 
+          get_ap                         uvm_analysis_port                                                                  -     @10948                              
+            recording_detail             integral                                                                           32    'd1                                 
+          get_peek_export                uvm_get_peek_imp                                                                   -     @10852                              
+            recording_detail             integral                                                                           32    'd1                                 
+          put_ap                         uvm_analysis_port                                                                  -     @10900                              
+            recording_detail             integral                                                                           32    'd1                                 
+          put_export                     uvm_put_imp                                                                        -     @10804                              
+            recording_detail             integral                                                                           32    'd1                                 
+          recording_detail               integral                                                                           32    'd1                                 
+        chan2_get                        uvm_get_port                                                                       -     @11465                              
+          recording_detail               integral                                                                           32    'd1                                 
+        hbus_fifo                        uvm_tlm_analysis_fifo #(T)                                                         -     @10977                              
+          analysis_export                uvm_analysis_imp                                                                   -     @11269                              
+            recording_detail             integral                                                                           32    'd1                                 
+          get_ap                         uvm_analysis_port                                                                  -     @11219                              
+            recording_detail             integral                                                                           32    'd1                                 
+          get_peek_export                uvm_get_peek_imp                                                                   -     @11123                              
+            recording_detail             integral                                                                           32    'd1                                 
+          put_ap                         uvm_analysis_port                                                                  -     @11171                              
+            recording_detail             integral                                                                           32    'd1                                 
+          put_export                     uvm_put_imp                                                                        -     @11075                              
+            recording_detail             integral                                                                           32    'd1                                 
+          recording_detail               integral                                                                           32    'd1                                 
+        hbus_get                         uvm_get_port                                                                       -     @11514                              
+          recording_detail               integral                                                                           32    'd1                                 
+        yapp_fifo                        uvm_tlm_analysis_fifo #(T)                                                         -     @9937                               
+          analysis_export                uvm_analysis_imp                                                                   -     @10179                              
+            recording_detail             integral                                                                           32    'd1                                 
+          get_ap                         uvm_analysis_port                                                                  -     @10129                              
+            recording_detail             integral                                                                           32    'd1                                 
+          get_peek_export                uvm_get_peek_imp                                                                   -     @10033                              
+            recording_detail             integral                                                                           32    'd1                                 
+          put_ap                         uvm_analysis_port                                                                  -     @10081                              
+            recording_detail             integral                                                                           32    'd1                                 
+          put_export                     uvm_put_imp                                                                        -     @9985                               
+            recording_detail             integral                                                                           32    'd1                                 
+          recording_detail               integral                                                                           32    'd1                                 
+        yapp_get                         uvm_get_port                                                                       -     @11318                              
+          recording_detail               integral                                                                           32    'd1                                 
+        recording_detail                 integral                                                                           32    'd1                                 
+      ypkt_in                            uvm_analysis_export                                                                -     @11739                              
+        recording_detail                 integral                                                                           32    'd1                                 
+      recording_detail                   integral                                                                           32    'd1                                 
+    yapp_rm                              yapp_router_regs_vendor_Cadence_Design_Systems_library_Yapp_Registers_version_1_5  -     @4190                               
+      router_yapp_regs                   yapp_regs_c                                                                        -     @4288                               
+        addr0_cnt_reg                    addr0_cnt_reg_c                                                                    -     @154                                
+          non_reserved_auto_added_field  uvm_reg_field                                                                      ...    RO addr0_cnt_reg[7:0]=8'h00        
+        addr1_cnt_reg                    addr1_cnt_reg_c                                                                    -     @4331                               
+          non_reserved_auto_added_field  uvm_reg_field                                                                      ...    RO addr1_cnt_reg[7:0]=8'h00        
+        addr2_cnt_reg                    addr2_cnt_reg_c                                                                    -     @4345                               
+          non_reserved_auto_added_field  uvm_reg_field                                                                      ...    RO addr2_cnt_reg[7:0]=8'h00        
+        addr3_cnt_reg                    illegal_addr_cnt_reg_c                                                             -     @4360                               
+          non_reserved_auto_added_field  uvm_reg_field                                                                      ...    RO addr3_cnt_reg[7:0]=8'h00        
+        ctrl_reg                         ctrl_reg_c                                                                         -     @4375                               
+          plen                           uvm_reg_field                                                                      ...    RW ctrl_reg[5:0]=6'h00             
+        en_reg                           en_reg_c                                                                           -     @4390                               
+          router_en                      uvm_reg_field                                                                      ...    RW en_reg[0:0]=1'h0                
+          parity_err_cnt_en              uvm_reg_field                                                                      ...    RW en_reg[1:1]=1'h0                
+          oversized_pkt_cnt_en           uvm_reg_field                                                                      ...    RW en_reg[2:2]=1'h0                
+          addr0_cnt_en                   uvm_reg_field                                                                      ...    RW en_reg[4:4]=1'h0                
+          addr1_cnt_en                   uvm_reg_field                                                                      ...    RW en_reg[5:5]=1'h0                
+          addr2_cnt_en                   uvm_reg_field                                                                      ...    RW en_reg[6:6]=1'h0                
+          addr3_cnt_en                   uvm_reg_field                                                                      ...    RW en_reg[7:7]=1'h0                
+        mem_size_reg                     mem_size_reg_c                                                                     -     @4405                               
+          non_reserved_auto_added_field  uvm_reg_field                                                                      ...    RO mem_size_reg[7:0]=8'h00         
+        oversized_pkt_cnt_reg            oversized_pkt_cnt_reg_c                                                            -     @4438                               
+          non_reserved_auto_added_field  uvm_reg_field                                                                      ...    RO oversized_pkt_cnt_reg[7:0]=8'h00
+        parity_err_cnt_reg               parity_err_cnt_reg_c                                                               -     @4453                               
+          non_reserved_auto_added_field  uvm_reg_field                                                                      ...    RO parity_err_cnt_reg[7:0]=8'h00   
+      router_yapp_mem                    yapp_mem_c                                                                         -     @4245                               
+        n_bits                           integral                                                                           32    'd8                                 
+        size                             integral                                                                           32    'd256                               
+      router_yapp_pkt_mem                yapp_pkt_mem_c                                                                     -     @4267                               
+        n_bits                           integral                                                                           32    'd8                                 
+        size                             integral                                                                           32    'd64                                
+    recording_detail                     integral                                                                           32    'd1                                 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ./YAPP/sv/yapp_tx_driver.sv(45) @ 0: uvm_test_top.tb.YAPP.agent.driver [yapp_tx_driver] Running Simulation...
+UVM_INFO ./YAPP/sv/yapp_tx_monitor.sv(45) @ 0: uvm_test_top.tb.YAPP.agent.monitor [yapp_tx_monitor] Running Simulation...
+UVM_INFO ./YAPP/sv/yapp_tx_sequencer.sv(9) @ 0: uvm_test_top.tb.YAPP.agent.sequencer [yapp_tx_sequencer] Running Simulation...
+UVM_INFO ./YAPP/sv/yapp_tx_agent.sv(32) @ 0: uvm_test_top.tb.YAPP.agent [yapp_tx_agent] Running Simulation...
+UVM_INFO ./YAPP/sv/yapp_env.sv(17) @ 0: uvm_test_top.tb.YAPP [yapp_env] Running Simulation...
+UVM_INFO ./module_uvc/tb/router_tb.sv(78) @ 0: uvm_test_top.tb [router_tb] Running Simulation...
+SDI/Verilog Transaction Recording Facility Version 23.09-s006
+UVM_INFO ./channel/sv/channel_rx_monitor.sv(109) @ 0: uvm_test_top.tb.chan2.rx_agent.monitor [channel_rx_monitor] Inside the run() phase
+UVM_INFO ./channel/sv/channel_rx_monitor.sv(109) @ 0: uvm_test_top.tb.chan1.rx_agent.monitor [channel_rx_monitor] Inside the run() phase
+UVM_INFO ./channel/sv/channel_rx_monitor.sv(109) @ 0: uvm_test_top.tb.chan0.rx_agent.monitor [channel_rx_monitor] Inside the run() phase
+UVM_INFO ./YAPP/sv/yapp_tx_monitor.sv(17) @ 0: uvm_test_top.tb.YAPP.agent.monitor [Run Phase] You are in the Monitor
+UVM_INFO ./clock_and_reset/sv/clock_and_reset_seq.sv(48) @ 0: uvm_test_top.tb.clk_rst.agent.sequencer@@clk10_rst5_seq [clk10_rst5_seq] Starting test_sequence sequence body
+UVM_INFO ./clock_and_reset/sv/clock_and_reset_seq.sv(20) @ 0: uvm_test_top.tb.clk_rst.agent.sequencer@@clk10_rst5_seq.cr [clock_and_reset_sequence] starting body clock_and_reset_wait_seq
+UVM_INFO ./hbus/sv/hbus_if.sv(41) @ 50: reporter [HBUS_IF] Master Observed Reset
+UVM_INFO ./hbus/sv/hbus_monitor.sv(91) @ 50: uvm_test_top.tb.hbus.monitor [hbus_monitor] Reset Active
+UVM_INFO ./YAPP/sv/yapp_tx_monitor.sv(20) @ 550: uvm_test_top.tb.YAPP.agent.monitor [yapp_tx_monitor] Detected Reset Done
+UVM_INFO ./YAPP/sv/yapp_tx_driver.sv(21) @ 550: uvm_test_top.tb.YAPP.agent.driver [yapp_tx_driver] Reset Dropped
+UVM_INFO ./channel/sv/channel_rx_monitor.sv(113) @ 550: uvm_test_top.tb.chan2.rx_agent.monitor [channel_rx_monitor] Detected Reset Done
+UVM_INFO ./channel/sv/channel_rx_driver.sv(72) @ 550: uvm_test_top.tb.chan2.rx_agent.driver [channel_rx_driver] Reset Dropped
+UVM_INFO ./channel/sv/channel_rx_monitor.sv(113) @ 550: uvm_test_top.tb.chan1.rx_agent.monitor [channel_rx_monitor] Detected Reset Done
+UVM_INFO ./channel/sv/channel_rx_driver.sv(72) @ 550: uvm_test_top.tb.chan1.rx_agent.driver [channel_rx_driver] Reset Dropped
+UVM_INFO ./channel/sv/channel_rx_monitor.sv(113) @ 550: uvm_test_top.tb.chan0.rx_agent.monitor [channel_rx_monitor] Detected Reset Done
+UVM_INFO ./channel/sv/channel_rx_driver.sv(72) @ 550: uvm_test_top.tb.chan0.rx_agent.driver [channel_rx_driver] Reset Dropped
+UVM_INFO ./hbus/sv/hbus_monitor.sv(93) @ 550: uvm_test_top.tb.hbus.monitor [hbus_monitor] Reset Deasserted
+UVM_INFO ./hbus/sv/hbus_master_driver.sv(57) @ 550: uvm_test_top.tb.hbus.masters[0].driver [hbus_master_driver] Reset Dropped
+UVM_INFO ./hbus/sv/hbus_if.sv(74) @ 600: reporter [HBUS_IF] Master writes a5 to 1001
+UVM_INFO ./hbus/sv/hbus_master_driver.sv(67) @ 600: uvm_test_top.tb.hbus.masters[0].driver [hbus_master_driver] Driving transaction :
+----------------------------------------------------------------------------------------------------
+Name                           Type                  Size  Value                                    
+----------------------------------------------------------------------------------------------------
+tr                             hbus_transaction      -     @13166                                   
+  haddr                        integral              16    'h1001                                   
+  hdata                        integral              8     'ha5                                     
+  hwr_rd                       hbus_read_write_enum  1     HBUS_WRITE                               
+  wait_between_cycle           integral              32    'h0                                      
+  begin_time                   time                  64    600                                      
+  depth                        int                   32    'd2                                      
+  parent sequence (name)       string                18    default_parent_seq                       
+  parent sequence (full name)  string                18    default_parent_seq                       
+  sequencer                    string                41    uvm_test_top.tb.hbus.masters[0].sequencer
+----------------------------------------------------------------------------------------------------
+
+UVM_INFO ./hbus/sv/hbus_if.sv(148) @ 650: reporter [HBUS_IF] Monitor Write Transaction
+UVM_INFO ./hbus/sv/hbus_monitor.sv(101) @ 650: uvm_test_top.tb.hbus.monitor [hbus_monitor] Collecting Transaction
+UVM_INFO @ 700: reporter [RegModel] Wrote register via map yapp_rm.router_yapp_regs.router_yapp_regs: yapp_rm.router_yapp_regs.en_reg=0xa5
+UVM_INFO /home/cc/mnt/XCELIUM2309/tools/methodology/UVM/CDNS-1.1d/sv/src/reg/uvm_reg.svh(2863) @ 700: reporter [RegModel] Peeked register "yapp_rm.router_yapp_regs.en_reg": 'h00000000000000a5
+UVM_INFO ./module_uvc/tb/router_test_lib.sv(272) @ 700: uvm_test_top [REG_ACCESS] Read from register en_reg: value= a5
+UVM_INFO /home/cc/mnt/XCELIUM2309/tools/methodology/UVM/CDNS-1.1d/sv/src/reg/uvm_reg.svh(2806) @ 700: reporter [RegModel] Poked register "yapp_rm.router_yapp_regs.en_reg": 'h000000000000005a
+UVM_INFO ./hbus/sv/hbus_monitor.sv(109) @ 750: uvm_test_top.tb.hbus.monitor [hbus_monitor] transaction collected :
+------------------------------------------------------------
+Name                  Type                  Size  Value     
+------------------------------------------------------------
+tr_collect            hbus_transaction      -     @13152    
+  haddr               integral              16    'h1001    
+  hdata               integral              8     'ha5      
+  hwr_rd              hbus_read_write_enum  1     HBUS_WRITE
+  wait_between_cycle  integral              32    'h0       
+  begin_time          time                  64    650       
+  end_time            time                  64    750       
+------------------------------------------------------------
+
+UVM_INFO ./hbus/sv/hbus_master_driver.sv(67) @ 800: uvm_test_top.tb.hbus.masters[0].driver [hbus_master_driver] Driving transaction :
+----------------------------------------------------------------------------------------------------
+Name                           Type                  Size  Value                                    
+----------------------------------------------------------------------------------------------------
+tr                             hbus_transaction      -     @13184                                   
+  haddr                        integral              16    'h1001                                   
+  hdata                        integral              8     'h0                                      
+  hwr_rd                       hbus_read_write_enum  1     HBUS_READ                                
+  wait_between_cycle           integral              32    'h0                                      
+  begin_time                   time                  64    800                                      
+  depth                        int                   32    'd2                                      
+  parent sequence (name)       string                18    default_parent_seq                       
+  parent sequence (full name)  string                18    default_parent_seq                       
+  sequencer                    string                41    uvm_test_top.tb.hbus.masters[0].sequencer
+----------------------------------------------------------------------------------------------------
+
+UVM_INFO ./hbus/sv/hbus_if.sv(155) @ 850: reporter [HBUS_IF] Monitor Read Transaction
+UVM_INFO ./hbus/sv/hbus_monitor.sv(101) @ 850: uvm_test_top.tb.hbus.monitor [hbus_monitor] Collecting Transaction
+UVM_INFO ./hbus/sv/hbus_if.sv(89) @ 1000: reporter [HBUS_IF] Master reads 52 from 1001
+UVM_INFO @ 1000: reporter [RegModel] Read  register via map yapp_rm.router_yapp_regs.router_yapp_regs: yapp_rm.router_yapp_regs.en_reg=52
+UVM_INFO ./module_uvc/tb/router_test_lib.sv(275) @ 1000: uvm_test_top [REG_ACCESS] Read from register en_reg: value= 52
+UVM_INFO /home/cc/mnt/XCELIUM2309/tools/methodology/UVM/CDNS-1.1d/sv/src/reg/uvm_reg.svh(2806) @ 1000: reporter [RegModel] Poked register "yapp_rm.router_yapp_regs.addr0_cnt_reg": 'h00000000000000a5
+UVM_INFO ./hbus/sv/hbus_monitor.sv(109) @ 1050: uvm_test_top.tb.hbus.monitor [hbus_monitor] transaction collected :
+-----------------------------------------------------------
+Name                  Type                  Size  Value    
+-----------------------------------------------------------
+tr_collect            hbus_transaction      -     @13152   
+  haddr               integral              16    'h1001   
+  hdata               integral              8     'h52     
+  hwr_rd              hbus_read_write_enum  1     HBUS_READ
+  wait_between_cycle  integral              32    'h0      
+  begin_time          time                  64    850      
+  end_time            time                  64    1050     
+-----------------------------------------------------------
+
+UVM_INFO ./hbus/sv/hbus_master_driver.sv(67) @ 1100: uvm_test_top.tb.hbus.masters[0].driver [hbus_master_driver] Driving transaction :
+----------------------------------------------------------------------------------------------------
+Name                           Type                  Size  Value                                    
+----------------------------------------------------------------------------------------------------
+tr                             hbus_transaction      -     @12948                                   
+  haddr                        integral              16    'h1009                                   
+  hdata                        integral              8     'h0                                      
+  hwr_rd                       hbus_read_write_enum  1     HBUS_READ                                
+  wait_between_cycle           integral              32    'h0                                      
+  begin_time                   time                  64    1100                                     
+  depth                        int                   32    'd2                                      
+  parent sequence (name)       string                18    default_parent_seq                       
+  parent sequence (full name)  string                18    default_parent_seq                       
+  sequencer                    string                41    uvm_test_top.tb.hbus.masters[0].sequencer
+----------------------------------------------------------------------------------------------------
+
+UVM_INFO ./hbus/sv/hbus_if.sv(155) @ 1150: reporter [HBUS_IF] Monitor Read Transaction
+UVM_INFO ./hbus/sv/hbus_monitor.sv(101) @ 1150: uvm_test_top.tb.hbus.monitor [hbus_monitor] Collecting Transaction
+UVM_INFO ./hbus/sv/hbus_if.sv(89) @ 1300: reporter [HBUS_IF] Master reads a5 from 1009
+UVM_INFO @ 1300: reporter [RegModel] Read  register via map yapp_rm.router_yapp_regs.router_yapp_regs: yapp_rm.router_yapp_regs.addr0_cnt_reg=a5
+UVM_INFO ./module_uvc/tb/router_test_lib.sv(280) @ 1300: uvm_test_top [REG_ACCESS] Read from addr0_cnt_reg: value= a5
+UVM_INFO ./hbus/sv/hbus_monitor.sv(109) @ 1350: uvm_test_top.tb.hbus.monitor [hbus_monitor] transaction collected :
+-----------------------------------------------------------
+Name                  Type                  Size  Value    
+-----------------------------------------------------------
+tr_collect            hbus_transaction      -     @13152   
+  haddr               integral              16    'h1009   
+  hdata               integral              8     'ha5     
+  hwr_rd              hbus_read_write_enum  1     HBUS_READ
+  wait_between_cycle  integral              32    'h0      
+  begin_time          time                  64    1150     
+  end_time            time                  64    1350     
+-----------------------------------------------------------
+
+UVM_INFO ./hbus/sv/hbus_if.sv(74) @ 1400: reporter [HBUS_IF] Master writes 5a to 1009
+UVM_INFO ./hbus/sv/hbus_master_driver.sv(67) @ 1400: uvm_test_top.tb.hbus.masters[0].driver [hbus_master_driver] Driving transaction :
+----------------------------------------------------------------------------------------------------
+Name                           Type                  Size  Value                                    
+----------------------------------------------------------------------------------------------------
+tr                             hbus_transaction      -     @13169                                   
+  haddr                        integral              16    'h1009                                   
+  hdata                        integral              8     'h5a                                     
+  hwr_rd                       hbus_read_write_enum  1     HBUS_WRITE                               
+  wait_between_cycle           integral              32    'h0                                      
+  begin_time                   time                  64    1400                                     
+  depth                        int                   32    'd2                                      
+  parent sequence (name)       string                18    default_parent_seq                       
+  parent sequence (full name)  string                18    default_parent_seq                       
+  sequencer                    string                41    uvm_test_top.tb.hbus.masters[0].sequencer
+----------------------------------------------------------------------------------------------------
+
+UVM_INFO ./hbus/sv/hbus_if.sv(148) @ 1450: reporter [HBUS_IF] Monitor Write Transaction
+UVM_INFO ./hbus/sv/hbus_monitor.sv(101) @ 1450: uvm_test_top.tb.hbus.monitor [hbus_monitor] Collecting Transaction
+UVM_INFO @ 1500: reporter [RegModel] Wrote register via map yapp_rm.router_yapp_regs.router_yapp_regs: yapp_rm.router_yapp_regs.addr0_cnt_reg=0x5a
+UVM_INFO /home/cc/mnt/XCELIUM2309/tools/methodology/UVM/CDNS-1.1d/sv/src/reg/uvm_reg.svh(2863) @ 1500: reporter [RegModel] Peeked register "yapp_rm.router_yapp_regs.addr0_cnt_reg": 'h00000000000000a5
+UVM_INFO ./module_uvc/tb/router_test_lib.sv(283) @ 1500: uvm_test_top [REG_ACCESS] Read from addr0_cnt_reg: value= a5
+UVM_INFO /home/cc/mnt/XCELIUM2309/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 1500: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ./YAPP/sv/yapp_tx_driver.sv(49) @ 1500: uvm_test_top.tb.YAPP.agent.driver [yapp_tx_driver] Report: YAPP TX Driver send 0 Packets
+UVM_INFO ./YAPP/sv/yapp_tx_monitor.sv(41) @ 1500: uvm_test_top.tb.YAPP.agent.monitor [yapp_tx_monitor] Report: YAPP Monitor Collected 0 Packets
+UVM_INFO ./channel/sv/channel_rx_driver.sv(94) @ 1500: uvm_test_top.tb.chan0.rx_agent.driver [channel_rx_driver] Report: Channel_0 RX Driver Sent 0 Responses
+UVM_INFO ./channel/sv/channel_rx_monitor.sv(157) @ 1500: uvm_test_top.tb.chan0.rx_agent.monitor [channel_rx_monitor] Report: Channel_0 Monitor Collected 0 Packets
+UVM_INFO ./channel/sv/channel_rx_driver.sv(94) @ 1500: uvm_test_top.tb.chan1.rx_agent.driver [channel_rx_driver] Report: Channel_1 RX Driver Sent 0 Responses
+UVM_INFO ./channel/sv/channel_rx_monitor.sv(157) @ 1500: uvm_test_top.tb.chan1.rx_agent.monitor [channel_rx_monitor] Report: Channel_1 Monitor Collected 0 Packets
+UVM_INFO ./channel/sv/channel_rx_driver.sv(94) @ 1500: uvm_test_top.tb.chan2.rx_agent.driver [channel_rx_driver] Report: Channel_2 RX Driver Sent 0 Responses
+UVM_INFO ./channel/sv/channel_rx_monitor.sv(157) @ 1500: uvm_test_top.tb.chan2.rx_agent.monitor [channel_rx_monitor] Report: Channel_2 Monitor Collected 0 Packets
+UVM_INFO ./hbus/sv/hbus_monitor.sv(132) @ 1500: uvm_test_top.tb.hbus.monitor [hbus_monitor] Report: HBUS Monitor Collected 1 WRITE and 2 READ Transactions
+UVM_INFO ./module_uvc/sv/router_scoreboard.sv(258) @ 1500: uvm_test_top.tb.rt_env.rt_scb [[Scoreboard]] Packets Received: 0
+UVM_INFO ./module_uvc/sv/router_scoreboard.sv(259) @ 1500: uvm_test_top.tb.rt_env.rt_scb [[Scoreboard]] Wrong Packets: 0
+UVM_INFO ./module_uvc/sv/router_scoreboard.sv(260) @ 1500: uvm_test_top.tb.rt_env.rt_scb [[Scoreboard]] Matched Packets: 0
+UVM_INFO ./module_uvc/sv/router_scoreboard.sv(261) @ 1500: uvm_test_top.tb.rt_env.rt_scb [[Scoreboard]] Dropped Packets: 0
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   76
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[BUILD_PHASE]     2
+[HBUS_IF]     9
+[NOCOV]     3
+[REG_ACCESS]     4
+[RNTST]     1
+[RegModel]     8
+[Run Phase]     1
+[TEST_DONE]     1
+[UVMTOP]     1
+[[Scoreboard]]     4
+[channel_rx_driver]     6
+[channel_rx_monitor]     9
+[clk10_rst5_seq]     1
+[clock_and_reset_sequence]     1
+[hbus_master_driver]     5
+[hbus_monitor]    10
+[router_tb]     1
+[yapp_env]     1
+[yapp_tx_agent]     1
+[yapp_tx_driver]     3
+[yapp_tx_monitor]     3
+[yapp_tx_sequencer]     1
+Simulation complete via $finish(1) at time 150 NS + 47
+/home/cc/mnt/XCELIUM2309/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+xcelium> exit
+TOOL:	xrun(64)	23.09-s006: Exiting on Jul 09, 2025 at 19:29:52 PKT  (total: 00:00:03)
