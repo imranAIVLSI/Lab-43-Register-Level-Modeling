@@ -244,10 +244,9 @@ endclass : uvm_mem_walk_test
 
 class reg_access_test extends base_test;
 
-    // uvm_reg_hw_reset_seq reset_seq;
-
     yapp_regs_c yapp_regs;
     uvm_status_e status;
+
   // component macro
   `uvm_component_utils(reg_access_test)
 
@@ -258,8 +257,6 @@ class reg_access_test extends base_test;
 
   function void build_phase(uvm_phase phase);
         uvm_reg::include_coverage("*", UVM_NO_COVERAGE);
-        // reset_seq = uvm_reg_hw_reset_seq::type_id::create("uvm_reset_seq");
-        // uvm_config_wrapper::set(this, "tb.chan?.rx_agent.sequencer.run_phase", "default_sequence", channel_rx_resp_seq::get_type());
         uvm_config_wrapper::set(this, "tb.clk_rst.agent.sequencer.run_phase", "default_sequence", clk10_rst5_seq::get_type());
         super.build_phase(phase);
   endfunction : build_phase
@@ -269,21 +266,19 @@ bit [7:0] rdata;
      //RW register Check
      yapp_regs.en_reg.write(status, 8'hA5);
      yapp_regs.en_reg.peek(status, rdata);
-     `uvm_info("REG_ACCESS", $sformatf("Read from register en_reg: value= %0h", rdata), UVM_LOW)
+     `uvm_info("REG_ACCESS", $sformatf("Read from register en_reg: value= %0h", rdata), UVM_NONE)
      yapp_regs.en_reg.poke(status, 8'h5A);
      yapp_regs.en_reg.read(status, rdata);
-     `uvm_info("REG_ACCESS", $sformatf("Read from register en_reg: value= %0h", rdata), UVM_LOW)
+     `uvm_info("REG_ACCESS", $sformatf("Read from register en_reg: value= %0h", rdata), UVM_NONE)
 
      //RO register check
      yapp_regs.addr0_cnt_reg.poke(status, 8'hA5);
      yapp_regs.addr0_cnt_reg.read(status, rdata);
-     `uvm_info("REG_ACCESS", $sformatf("Read from addr0_cnt_reg: value= %0h", rdata), UVM_LOW)
+     `uvm_info("REG_ACCESS", $sformatf("Read from addr0_cnt_reg: value= %0h", rdata), UVM_NONE)
      yapp_regs.addr0_cnt_reg.write(status, 8'h5A);
      yapp_regs.addr0_cnt_reg.peek(status, rdata);
-     `uvm_info("REG_ACCESS", $sformatf("Read from addr0_cnt_reg: value= %0h", rdata), UVM_LOW)
-    //  reset_seq.model = tb.yapp_rm;
-     // Execute the sequence (sequencer is already set in the testbench)
-    //  reset_seq.start(null);
+     `uvm_info("REG_ACCESS", $sformatf("Read from addr0_cnt_reg: value= %0h", rdata), UVM_NONE)
+
      phase.drop_objection(this," Dropping Objection to uvm built reset test finished");
      
   endtask
@@ -299,24 +294,95 @@ class reg_function_test extends base_test;
 
     yapp_tx_sequencer yapp_sequencer;
     yapp_012_seq yapp012;
-
+    yapp_regs_c yapp_regs;
+    uvm_reg regs[$];
+    uvm_reg rw_regs[$];
+    uvm_reg ro_regs[$];
     function new(string name = "reg_function_test", uvm_component parent);
         super.new(name, parent);
     endfunction
 
     function void build_phase(uvm_phase phase);
         yapp012 = yapp_012_seq::type_id::create("yapp012", this);
+        uvm_config_wrapper::set(this, "tb.clk_rst.agent.sequencer.run_phase", "default_sequence", clk10_rst5_seq::get_type());
         uvm_config_wrapper::set(this, "tb.chan?.rx_agent.sequencer.run_phase", "default_sequence", channel_rx_resp_seq::get_type());
         super.build_phase(phase);
     endfunction
 
     task run_phase(uvm_phase phase);
+        bit [7:0] rdata;
+        uvm_status_e status;
+        phase.raise_objection(this, "Raising Objection to run reg_function_test");
+
+        // Enable automatic checking on read
+        tb.yapp_rm.default_map.set_check_on_read(1);
+
+        yapp_regs.en_reg.write(status, 8'h01);
+        yapp_regs.en_reg.read(status, rdata);
+        `uvm_info("REG_FUNCTION_TEST", $sformatf("Read from register en_reg: value= %0h", rdata), UVM_NONE) 
+        yapp012.start(yapp_sequencer);
+        yapp_regs.addr0_cnt_reg.read(status, rdata);
+        `uvm_info("REG_FUNCTION_TEST", $sformatf("Read from addr0_cnt_reg: value= %0h", rdata), UVM_NONE) 
+        yapp_regs.addr1_cnt_reg.read(status, rdata);
+        `uvm_info("REG_FUNCTION_TEST", $sformatf("Read from addr1_cnt_reg: value= %0h", rdata), UVM_NONE) 
+        yapp_regs.addr2_cnt_reg.read(status, rdata);
+        `uvm_info("REG_FUNCTION_TEST", $sformatf("Read from addr2_cnt_reg: value= %0h", rdata), UVM_NONE) 
+        yapp_regs.addr3_cnt_reg.read(status, rdata);
+        `uvm_info("REG_FUNCTION_TEST", $sformatf("Read from addr3_cnt_reg: value= %0h", rdata), UVM_NONE) 
+        
+        yapp_regs.en_reg.write(status, 8'hff);
+        yapp012.start(yapp_sequencer);
+        yapp012.start(yapp_sequencer);
+
+        void'(yapp_regs.addr1_cnt_reg.predict(1));
+        void'(yapp_regs.addr0_cnt_reg.predict(1));
+        void'(yapp_regs.addr2_cnt_reg.predict(1));
+        void'(yapp_regs.addr3_cnt_reg.predict(1));
+
+        
+        yapp_regs.addr0_cnt_reg.read(status, rdata);
+        `uvm_info("REG_FUNCTION_TEST", $sformatf("Read from addr0_cnt_reg: value= %0h", rdata), UVM_NONE) 
+        yapp_regs.addr1_cnt_reg.read(status, rdata);
+        `uvm_info("REG_FUNCTION_TEST", $sformatf("Read from addr1_cnt_reg: value= %0h", rdata), UVM_NONE) 
+        yapp_regs.addr2_cnt_reg.read(status, rdata);
+        `uvm_info("REG_FUNCTION_TEST", $sformatf("Read from addr2_cnt_reg: value= %0h", rdata), UVM_NONE) 
+        yapp_regs.addr3_cnt_reg.read(status, rdata);
+        `uvm_info("REG_FUNCTION_TEST", $sformatf("Read from addr3_cnt_reg: value= %0h", rdata), UVM_NONE) 
+
+        yapp_regs.parity_err_cnt_reg.read(status, rdata);
+        `uvm_info("REG_FUNCTION_TEST", $sformatf("Read from parity_err_cnt_reg: value= %0h", rdata), UVM_NONE) 
+        yapp_regs.oversized_pkt_cnt_reg.read(status, rdata);
+        `uvm_info("REG_FUNCTION_TEST", $sformatf("Read from oversized_pkt_cnt_reg: value= %0h", rdata), UVM_NONE) 
         
 
+        // Get all registers in the register model
+        tb.yapp_rm.get_registers(regs);
+
+        // Select RW and RO registers using array selection
+        foreach (regs[i]) begin
+            if (regs[i].get_rights() == "RW")
+                rw_regs.push_back(regs[i]);
+            else if (regs[i].get_rights() == "RO")
+                ro_regs.push_back(regs[i]);
+        end
+
+        // Print names of RW registers
+        `uvm_info("REG_INTROSPECT", "RW Registers:", UVM_LOW)
+        foreach (rw_regs[i])
+            `uvm_info("REG_INTROSPECT", $sformatf("  %s", rw_regs[i].get_name()), UVM_LOW)
+
+        // Print names of RO registers
+        `uvm_info("REG_INTROSPECT", "RO Registers:", UVM_LOW)
+        foreach (ro_regs[i])
+            `uvm_info("REG_INTROSPECT", $sformatf("  %s", ro_regs[i].get_name()), UVM_LOW)
+
+
+        phase.drop_objection(this, "Dropping Objection to run reg_function_test finished");
     endtask
 
     function void connect_phase(uvm_phase phase);
         yapp_sequencer = tb.YAPP.agent.sequencer;
+        yapp_regs = tb.yapp_rm.router_yapp_regs;
     endfunction
 
 endclass: reg_function_test

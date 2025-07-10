@@ -36,7 +36,7 @@
 ./module_uvc/tb/cdns_uvmreg_utils_pkg.sv
 ./module_uvc/tb/yapp_router_regs_rdb.sv
 ./module_uvc/tb/tb_top.sv
-+UVM_TESTNAME=reg_access_test
++UVM_TESTNAME=reg_function_test
 +UVM_VERBOSITY=UVM_HIGH
 +SVSEED=random
 //*** add compile files here

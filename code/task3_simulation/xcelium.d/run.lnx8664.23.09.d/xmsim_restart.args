@@ -10,7 +10,7 @@
 /home/cc/mnt/XCELIUM2309/tools/methodology/UVM/CDNS-1.1d
 -sv_lib
 /home/cc/mnt/XCELIUM2309/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/64bit/libuvmpli.so
-+UVM_TESTNAME=reg_access_test
++UVM_TESTNAME=reg_function_test
 -SVSEED
 random
 -MESSAGES
@@ -20,7 +20,7 @@ random
 +EMGRLOG
 xrun.log
 -XLSTIME
-1752071389
+1752130234
 -XLKEEP
 -XLMODE
 ./xcelium.d/run.lnx8664.23.09.d
@@ -34,4 +34,4 @@ xrun
 -XLVERSION
 "TOOL:	xrun(64)	23.09-s006"
 -XLNAME
-./xcelium.d/run.lnx8664.23.09.d/n-seecs-009_5d4ae5b7-8160-44b8-a67d-780699b54416
+./xcelium.d/run.lnx8664.23.09.d/n-seecs-009_199ea58f-1c48-4796-b4d1-4408680193de

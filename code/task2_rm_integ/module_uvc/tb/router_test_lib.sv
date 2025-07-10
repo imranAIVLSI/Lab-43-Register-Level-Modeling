@@ -209,10 +209,8 @@ endclass : uvm_reset_test
 class  uvm_mem_walk_test extends base_test;
 
     uvm_mem_walk_seq mem_walk;
-
   // component macro
   `uvm_component_utils(uvm_mem_walk_test)
-
   // component constructor
   function new(string name, uvm_component parent);
     super.new(name, parent);
@@ -221,22 +219,16 @@ class  uvm_mem_walk_test extends base_test;
   function void build_phase(uvm_phase phase);
         uvm_reg::include_coverage("*", UVM_NO_COVERAGE);
         mem_walk = uvm_mem_walk_seq::type_id::create("mem_walk");
-        // uvm_config_wrapper::set(this, "tb.chan?.rx_agent.sequencer.run_phase", "default_sequence", channel_rx_resp_seq::get_type());
         uvm_config_wrapper::set(this, "tb.clk_rst.agent.sequencer.run_phase", "default_sequence", clk10_rst5_seq::get_type());
         super.build_phase(phase);
   endfunction : build_phase
 
   virtual task run_phase (uvm_phase phase);
      phase.raise_objection(this, "Raising Objection to run uvm built in reset test");
-     // Set the model property of the sequence to our Register Model instance
-     // Update the RHS of this assignment to match your instance names. Syntax is:
-     //  <testbench instance>.<register model instance>
      mem_walk.model = tb.yapp_rm;
      // Execute the sequence (sequencer is already set in the testbench)
      mem_walk.start(null);
      phase.drop_objection(this," Dropping Objection to uvm built reset test finished");
-     
-     
   endtask
 
 endclass : uvm_mem_walk_test

@@ -8,7 +8,9 @@
 /home/cc/mnt/XCELIUM2309/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/64bit/libuvmpli.so:uvm_pli_boot
 -timescale
 1ns/1ns
-+UVM_TESTNAME=uvm_mem_walk_test
++UVM_TESTNAME=uvm_reset_test
+-ACCESS
+rwc
 -no_analogsolver
 -MESSAGES
 -XLMODE
